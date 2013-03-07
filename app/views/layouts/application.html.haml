@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title Formula 1 Database
+    = stylesheet_link_tag "application", :media => "all" 
+    = javascript_include_tag "application" 
+    = csrf_meta_tags 
+
+%body
+  .navbar
+    .navbar-inner
+      = link_to "Formula 1 Database", root_path, class: "brand"
+      .ul.nav
+        %li.active 
+          =link_to "Home", root_path
+        %li
+          =link_to "See Teams", teams_path
+        %li
+          =link_to "Add Team", new_team_path
+        %li
+          =link_to "See Drivers", drivers_path
+        %li
+          =link_to "Add New Driver", new_driver_path
+
+  .container
+    = yield
+
+

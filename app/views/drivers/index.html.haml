@@ -1,0 +1,14 @@
+.row
+  .span12
+    .page-header
+      %h1 Drivers
+    %table.table
+      %thead
+        %tr
+          %th Driver Name
+      %tbody
+        - @drivers.each do |driver|
+          %tr
+            %td= driver.name
+            %td= link_to "Edit Driver", edit_driver_path(driver)
+            %td= link_to "Delete Driver", driver_path(driver), method: :delete
