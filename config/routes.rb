@@ -4,5 +4,6 @@ root to: "home#index"
 
 resources :teams
 resources :drivers
+resources :races
 
 end
