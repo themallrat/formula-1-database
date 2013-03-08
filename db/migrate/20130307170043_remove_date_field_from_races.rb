@@ -1,7 +1,5 @@
 class RemoveDateFieldFromRaces < ActiveRecord::Migration
-  def up
-    change_table :races do |t|
-      t.integer :date, t.string :date
-    end
+  def change
+    change_column :races, :date, :string
   end
 end
