@@ -1,8 +1,10 @@
 .row
   .span12
     .page-header
-      %h1 Calendar
-      =link_to "Add Race", new_race_path
+      %h1 
+        %i.icon-calendar
+        Calendar
+      =link_to "Add Race", new_race_path, class: "btn btn-primary"
     %table.table
       %thead
         %th Name
