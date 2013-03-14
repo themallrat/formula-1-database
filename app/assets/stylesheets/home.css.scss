@@ -1,5 +1,23 @@
-body.home {
+  h1 {
+    // font-family: $header-font-family;
+    // margin-bottom: 36px;
+    text-align: center;
+    font-size: 52px;
+    color: #FF0000;
+    // margin-top: 12px;
+  }
 
-$background-image:url("/assets/images/checkered-flag-background.jpg")
+  h3 {
+
+    text-align: center;
+    font-size: 30px;
+    color: #FF0000;
+
+  }
+
+body {
+
+  background: image-url("checkered-flags.jpg");
 
 }
+
