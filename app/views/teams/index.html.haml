@@ -1,17 +1,19 @@
-.row
-  .span12
-    .page-header
-      %h1 
-        %i.icon-group
-        Teams
-      =link_to "Add Team", new_team_path, class: "btn btn-primary"
-    %table.table
-      %thead
-        %tr 
-          %th Team Name
-      %tbody
-        - @teams.each do |team|
-          %tr 
-            %td= team.name
-            %td= link_to "Edit Team", edit_team_path(team)
-            %td= link_to "Delete Team", team_path(team), method: :delete
+#index-home
+  %body#one
+    .row
+      .span12
+        .page-header
+          %h1 
+            %i.icon-group
+            Teams
+          =link_to "Add Team", new_team_path, class: "btn btn-primary"
+        %table.table
+          %thead
+            %tr 
+              %th Team Name
+          %tbody
+            - @teams.each do |team|
+              %tr 
+                %td= team.name
+                %td= link_to "Edit Team", edit_team_path(team)
+                %td= link_to "Delete Team", team_path(team), method: :delete
